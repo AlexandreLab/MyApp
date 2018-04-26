@@ -1,0 +1,177 @@
+,activeflag,businesstype,curvetype,documentid,documentrevnum,documenttype,powersystemresourcetype,processtype,quantity,resolution,settlementdate,settlementperiod,timeseriesid
+0,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614126
+1,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Wind Offshore,Realised,2805.465,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614127
+2,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Wind Onshore,Realised,2749.874,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614128
+3,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Other,Realised,128.0,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614129
+4,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Nuclear,Realised,7083.0,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614130
+5,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614131
+6,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Fossil Gas,Realised,7689.0,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614132
+7,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614133
+8,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,209.0,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614134
+9,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614135
+10,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121210,1,Actual generation per type,Biomass,Realised,1217.0,PT30M,2018-04-25,1,NGET-EMFIP-AGPT-TS-00614136
+11,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614137
+12,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Wind Offshore,Realised,2923.515,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614138
+13,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Wind Onshore,Realised,2938.015,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614139
+14,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Other,Realised,129.0,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614140
+15,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Nuclear,Realised,7090.0,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614141
+16,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614142
+17,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Fossil Gas,Realised,7771.0,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614143
+18,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614144
+19,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,207.0,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614145
+20,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614146
+21,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121211,1,Actual generation per type,Biomass,Realised,1226.0,PT30M,2018-04-25,2,NGET-EMFIP-AGPT-TS-00614147
+22,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614148
+23,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Wind Offshore,Realised,2727.037,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614149
+24,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Wind Onshore,Realised,3034.438,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614150
+25,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Other,Realised,130.0,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614151
+26,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Nuclear,Realised,7136.0,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614152
+27,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614153
+28,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Fossil Gas,Realised,7470.0,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614154
+29,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614155
+30,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,205.0,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614156
+31,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614157
+32,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121212,1,Actual generation per type,Biomass,Realised,1195.0,PT30M,2018-04-25,3,NGET-EMFIP-AGPT-TS-00614158
+33,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614159
+34,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Wind Offshore,Realised,2526.142,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614160
+35,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Wind Onshore,Realised,2984.292,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614161
+36,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Other,Realised,128.0,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614162
+37,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Nuclear,Realised,7136.0,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614163
+38,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614164
+39,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Fossil Gas,Realised,7885.0,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614165
+40,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614166
+41,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,183.0,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614167
+42,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614168
+43,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121213,1,Actual generation per type,Biomass,Realised,1135.0,PT30M,2018-04-25,4,NGET-EMFIP-AGPT-TS-00614169
+44,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614170
+45,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Wind Offshore,Realised,2701.563,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614171
+46,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Wind Onshore,Realised,3031.121,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614172
+47,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Other,Realised,128.0,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614173
+48,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Nuclear,Realised,7141.0,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614174
+49,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614175
+50,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Fossil Gas,Realised,7665.0,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614176
+51,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614177
+52,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,183.0,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614178
+53,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614179
+54,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121214,1,Actual generation per type,Biomass,Realised,1130.0,PT30M,2018-04-25,5,NGET-EMFIP-AGPT-TS-00614180
+55,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614181
+56,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Wind Offshore,Realised,2726.968,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614182
+57,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Wind Onshore,Realised,3206.457,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614183
+58,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Other,Realised,125.0,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614184
+59,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Nuclear,Realised,7163.0,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614185
+60,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614186
+61,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Fossil Gas,Realised,7132.0,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614187
+62,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614188
+63,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,183.0,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614189
+64,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614190
+65,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121215,1,Actual generation per type,Biomass,Realised,1110.0,PT30M,2018-04-25,6,NGET-EMFIP-AGPT-TS-00614191
+66,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614192
+67,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Wind Offshore,Realised,2663.102,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614193
+68,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Wind Onshore,Realised,3098.728,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614194
+69,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Other,Realised,125.0,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614195
+70,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Nuclear,Realised,7154.0,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614196
+71,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614197
+72,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Fossil Gas,Realised,6980.0,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614198
+73,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614199
+74,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,175.0,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614200
+75,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614201
+76,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121216,1,Actual generation per type,Biomass,Realised,1151.0,PT30M,2018-04-25,7,NGET-EMFIP-AGPT-TS-00614202
+77,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614203
+78,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Wind Offshore,Realised,2595.674,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614204
+79,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Wind Onshore,Realised,3208.151,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614205
+80,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Other,Realised,124.0,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614206
+81,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Nuclear,Realised,7166.0,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614207
+82,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614208
+83,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Fossil Gas,Realised,7040.0,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614209
+84,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614210
+85,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,172.0,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614211
+86,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614212
+87,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121226,1,Actual generation per type,Biomass,Realised,1114.0,PT30M,2018-04-25,8,NGET-EMFIP-AGPT-TS-00614213
+88,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614214
+89,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Wind Offshore,Realised,112.115,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614215
+90,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Wind Onshore,Realised,1383.26,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614216
+91,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Other,Realised,125.0,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614217
+92,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Nuclear,Realised,7167.0,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614218
+93,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614219
+94,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Fossil Gas,Realised,6916.0,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614220
+95,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614221
+96,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,190.0,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614222
+97,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614223
+98,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121227,1,Actual generation per type,Biomass,Realised,1143.0,PT30M,2018-04-25,9,NGET-EMFIP-AGPT-TS-00614224
+99,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614225
+100,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Wind Offshore,Realised,112.115,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614226
+101,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Wind Onshore,Realised,1383.26,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614227
+102,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Other,Realised,124.0,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614228
+103,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Nuclear,Realised,7170.0,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614229
+104,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614230
+105,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Fossil Gas,Realised,7050.0,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614231
+106,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614232
+107,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,187.0,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614233
+108,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614234
+109,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121228,1,Actual generation per type,Biomass,Realised,1142.0,PT30M,2018-04-25,10,NGET-EMFIP-AGPT-TS-00614235
+110,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Solar,Realised,0.0,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614236
+111,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Wind Offshore,Realised,2379.328,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614237
+112,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Wind Onshore,Realised,3286.74,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614238
+113,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Other,Realised,125.0,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614239
+114,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Nuclear,Realised,7166.0,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614240
+115,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614241
+116,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Fossil Gas,Realised,7339.0,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614242
+117,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614243
+118,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,258.0,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614244
+119,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614245
+120,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121229,1,Actual generation per type,Biomass,Realised,1174.0,PT30M,2018-04-25,11,NGET-EMFIP-AGPT-TS-00614246
+121,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Solar,Realised,2.0,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614247
+122,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Wind Offshore,Realised,107.778,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614248
+123,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Wind Onshore,Realised,1418.056,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614249
+124,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Other,Realised,124.0,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614250
+125,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Nuclear,Realised,7168.0,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614251
+126,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614252
+127,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Fossil Gas,Realised,8281.0,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614253
+128,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614254
+129,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,257.0,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614255
+130,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Hydro Pumped Storage,Realised,0.0,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614256
+131,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121230,1,Actual generation per type,Biomass,Realised,1150.0,PT30M,2018-04-25,12,NGET-EMFIP-AGPT-TS-00614257
+132,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Solar,Realised,113.0,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614258
+133,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Wind Offshore,Realised,2024.2,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614259
+134,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Wind Onshore,Realised,3345.003,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614260
+135,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Other,Realised,123.0,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614261
+136,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Nuclear,Realised,7175.0,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614262
+137,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614263
+138,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Fossil Gas,Realised,9459.0,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614264
+139,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614265
+140,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,296.0,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614266
+141,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Hydro Pumped Storage,Realised,11.0,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614267
+142,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121231,1,Actual generation per type,Biomass,Realised,1222.0,PT30M,2018-04-25,13,NGET-EMFIP-AGPT-TS-00614268
+143,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Solar,Realised,504.0,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614269
+144,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Wind Offshore,Realised,1992.733,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614270
+145,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Wind Onshore,Realised,3255.55,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614271
+146,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Other,Realised,122.0,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614272
+147,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Nuclear,Realised,7179.0,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614273
+148,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614274
+149,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Fossil Gas,Realised,11218.0,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614275
+150,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614276
+151,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,323.0,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614277
+152,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Hydro Pumped Storage,Realised,150.0,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614278
+153,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121232,1,Actual generation per type,Biomass,Realised,1424.0,PT30M,2018-04-25,14,NGET-EMFIP-AGPT-TS-00614279
+154,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Solar,Realised,1080.0,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614291
+155,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Wind Offshore,Realised,2406.601,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614292
+156,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Wind Onshore,Realised,3295.676,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614293
+157,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Other,Realised,122.0,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614294
+158,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Nuclear,Realised,7183.0,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614295
+159,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614296
+160,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Fossil Gas,Realised,13404.0,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614297
+161,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614298
+162,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,497.0,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614299
+163,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Hydro Pumped Storage,Realised,457.0,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614300
+164,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121233,1,Actual generation per type,Biomass,Realised,1646.0,PT30M,2018-04-25,15,NGET-EMFIP-AGPT-TS-00614301
+165,True,Solar generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Solar,Realised,1720.0,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614302
+166,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Wind Offshore,Realised,95.719,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614303
+167,True,Wind generation,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Wind Onshore,Realised,1497.783,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614304
+168,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Other,Realised,124.0,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614305
+169,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Nuclear,Realised,7192.0,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614306
+170,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Fossil Oil,Realised,0.0,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614307
+171,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Fossil Gas,Realised,14981.0,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614308
+172,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Fossil Hard coal,Realised,0.0,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614309
+173,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Hydro Run-of-river and poundage,Realised,539.0,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614310
+174,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Hydro Pumped Storage,Realised,326.0,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614311
+175,True,Production,Sequential fixed size block,NGET-EMFIP-AGPT-00121234,1,Actual generation per type,Biomass,Realised,1841.0,PT30M,2018-04-25,16,NGET-EMFIP-AGPT-TS-00614312

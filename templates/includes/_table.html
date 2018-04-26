@@ -1,0 +1,23 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Date</th>
+      <th scope="col">Period</th>
+      <th scope="col">Source</th>
+      <th scope="col">Value</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for generation in generation_data %}
+  
+        <tr>
+          <th scope="row">{{generation.date}}</th>
+          <td>{{generation.period}}</td>
+          <td>{{generation.source}}</td>
+          <td>{{generation.value}}</td>
+        </tr>
+
+        
+    {% endfor %}
+     </tbody>
+</table>

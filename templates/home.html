@@ -1,5 +1,24 @@
 {% extends "layout.html" %}
 
 {% block content %}
-Home
+
+<div class="jumbotron">
+    <h1 class="display-4">Live generation data</h1>
+    <p class="lead">Data collected from Elexon BMRS platform and displayed here in a fancy table</p>
+</div>
+
+
+
+<div class="row">
+    <div class="col">
+        <div id="container" style="width:100%; height:400px;">
+        {% include 'includes/_chart.html' %}
+</div>
+
+<div class="row">
+    {% include 'includes/_table.html' %}
+</div>
+
 {% endblock %}
+
+
