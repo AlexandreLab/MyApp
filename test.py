@@ -8,25 +8,34 @@ import pandas as pd
 
 data = pd.read_csv("dataset.csv")
 
-generation_data = []
+series = []
 
 technology = data["powersystemresourcetype"].unique()
 
 #print(data.loc[(data["settlementperiod"]==1) & (data["powersystemresourcetype"]=="Solar"), "quantity"].values[0])
 
+#print(data.loc[data["powersystemresourcetype"]=="Solar", "quantity"].values)
 
 for i in range(1, 2, 1):
     for tech in technology:
         #print(i, tech)
         generation = {
-                'source': tech,
-                'date' : data.loc[(data["settlementperiod"]==i) & (data["powersystemresourcetype"]==tech), "settlementdate"].values[0],
-                'period': i,
-                'value': data.loc[(data["settlementperiod"]==i) & (data["powersystemresourcetype"]==tech), "quantity"].values[0],
+                'name': tech,
+                'data': data.loc[data["powersystemresourcetype"]==tech, "quantity"].values.tolist(),
         }
         
-    
-        generation_data.append(generation)
+        
+        
+        
+        series.append(generation)
 
-print(generation)
-#print(generation_data)
+
+xAxis = {"categories": [str(x) for x in range(1,3,1)]}
+    
+
+data["full date"] = data["settlementdate"]+" "+data["settlementperiod"].astype(str)
+
+
+xAxis = {"categories": data["full date"].unique().tolist()}
+
+print(xAxis)

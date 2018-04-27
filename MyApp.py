@@ -49,14 +49,26 @@ def about():
 
 
 @app.route('/dashboard')
-def dashboard(chartID = 'chart_ID', chart_type = 'bar', chart_height = 350):
+def dashboard(chartID = 'chart_ID', chart_type = 'area', chart_height = 500):
+    
     chart = {"renderTo": chartID, "type": chart_type, "height": chart_height,}
-    series = [{"name": 'Label1', "data": [1,2,3]}, {"name": 'Label2', "data": [4, 5, 6]}]
     title = {"text": 'My Title'}
-    xAxis = {"categories": ['xAxis Data1', 'xAxis Data2', 'xAxis Data3']}
+    
+    data["full date"] = data["settlementdate"]+" "+data["settlementperiod"].astype(str)
+    xAxis = {"categories": data["full date"].unique().tolist()}
     yAxis = {"title": {"text": 'yAxis Label'}}
+    
+    series= []
+    technology = data["powersystemresourcetype"].unique()
+    for tech in technology:
+        generation = {
+                'name': tech,
+                'data': data.loc[data["powersystemresourcetype"]==tech, "quantity"].values.tolist(),
+        }
+        series.append(generation)  
+        
+        
     return render_template('dashboard.html', chartID=chartID, chart=chart, series=series, title=title, xAxis=xAxis, yAxis=yAxis)
-
 
 @app.route('/contact')
 def contact():
