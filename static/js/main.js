@@ -14,7 +14,7 @@ function updateChart(){
             //console.log(results[i].data);
             console.log(series[i].name);
             //xAxis[i].setCategories
-            series[i].addPoint(["15", results[i].data], false, shift);
+            series[i].addPoint(results[i].data, false, shift);
             
         }
         
@@ -40,8 +40,8 @@ $(function () {
         title: title,
         
         xAxis: {
-            categories: xAxis,
             type: 'datetime',
+            tickInterval: 30*60 * 1000,
             dateTimeLabelFormats: {
                 day: '%e. %b %H:%M'
             }
@@ -57,12 +57,15 @@ $(function () {
                 stacking: 'normal',
                 lineColor: '#666666',
                 lineWidth: 1,
+                pointInterval: 30*60 * 1000,
+                pointStart: Date.UTC(year, month, day, hour, minute, 0, 0),
                 marker: {
                     lineWidth: 1,
                     lineColor: '#666666'
                 }
+
             }
         },
-        series: series
+        series:series,
     });
 });

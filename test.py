@@ -5,6 +5,8 @@ Created on Tue Apr 24 17:14:21 2018
 @author: sceac10
 """
 import pandas as pd
+
+
 import random
 
 data = pd.read_csv("dataset.csv")
@@ -40,3 +42,7 @@ data["full date"]=pd.to_datetime(data["full date"], unit='ms')
 data["full date"]=data["full date"]
 
 print(data["full date"].dt.microsecond)
+
+
+
+from flask_sqlalchemy import SQLAlchemy
