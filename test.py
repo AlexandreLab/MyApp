@@ -6,8 +6,10 @@ Created on Tue Apr 24 17:14:21 2018
 """
 import pandas as pd
 
-
+import config as conf
 import random
+import ElexonAPI
+from datetime import datetime, timedelta
 
 data = pd.read_csv("dataset.csv")
 
@@ -41,8 +43,12 @@ data["full date"]=pd.to_datetime(data["full date"], unit='ms')
 
 data["full date"]=data["full date"]
 
-print(data["full date"].dt.microsecond)
+api = ElexonAPI.ElexonAPI(conf.APIKEY)
 
+date=datetime.now()-timedelta(hours=4)
 
+startDate=datetime.now()-timedelta(hours=10)
+endDate=datetime.now()-timedelta(hours=4)
+api.get_historical_data(startDate, endDate)
 
-from flask_sqlalchemy import SQLAlchemy
+print(api.data)

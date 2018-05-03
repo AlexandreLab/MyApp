@@ -5,21 +5,23 @@ function updateChart(){
     var updateData = $.get('/live-data');
     
     updateData.done(function(results){
-        var i;
-        var series = chart.series;
-        var shift = series[0].data.length > 10;
-        var xAxis = chart.xAxis;
-        for(i = 0; i< results.length; i++){
-            //console.log(results[i].name);
-            //console.log(results[i].data);
-            console.log(series[i].name);
-            //xAxis[i].setCategories
-            series[i].addPoint(results[i].data, false, shift);
-            
+    
+        if (results.length>0) {
+            var i;
+            var series = chart.series;
+            var shift = series[0].data.length > 30;
+            var xAxis = chart.xAxis;
+            for(i = 0; i< results.length; i++){
+                //console.log(results[i].name);
+                //console.log(results[i].data);
+                console.log(series[i].name);
+                //xAxis[i].setCategories
+                series[i].addPoint(results[i].data, false, shift);
+                
+            }   
+            chart.redraw();
         }
-        
-        chart.redraw();
-        setTimeout(updateChart, 5000);
+        setTimeout(updateChart, 1*60*1000);
     });
     
 }
@@ -47,7 +49,6 @@ $(function () {
             }
         },
         
-
         yAxis: yAxis, 
         tooltip: {
             split: true,
@@ -60,10 +61,13 @@ $(function () {
                 pointInterval: 30*60 * 1000,
                 pointStart: Date.UTC(year, month, day, hour, minute, 0, 0),
                 marker: {
-                    lineWidth: 1,
-                    lineColor: '#666666'
+                    enabled: false,
+                    states: {
+                        hover: {
+                            enabled: true
+                        }
+                    }
                 }
-
             }
         },
         series:series,
