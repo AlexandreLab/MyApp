@@ -11,44 +11,42 @@ import random
 import ElexonAPI
 from datetime import datetime, timedelta
 
-data = pd.read_csv("dataset.csv")
 
-series = []
-
-technology = data["powersystemresourcetype"].unique()
-
-print(data.loc[(data["powersystemresourcetype"]=="Nuclear") & (data["settlementperiod"]==5), "quantity"].values[0])
-
-#print(data.loc[data["powersystemresourcetype"]=="Solar", "quantity"].values)
-
-index = random.randint(0,9)
-
-for tech in technology:
-    generation = {
-            'name': tech,
-            'data': data.loc[(data["powersystemresourcetype"]==tech) & (data["settlementperiod"]==index), "quantity"].values[0]
-    }
-    series.append(generation)
-        
+#api = ElexonAPI.ElexonAPI(conf.APIKEY)
+#
+#date=datetime.now()-timedelta(hours=4)
+#
+#startDate=datetime.now()-timedelta(hours=10)
+#endDate=datetime.now()-timedelta(hours=4)
+#api.get_historical_data(startDate, endDate)
 
 
-xAxis = {"categories": [str(x) for x in range(1,3,1)]}
-    
+test= -5
 
-data["Hour"]= ((data["settlementperiod"]-1)*30//60%24).map('{:02.0f}'.format)
-data["Minute"]= ((data["settlementperiod"]-1)*30%60).map('{:02.0f}'.format)
-data["settlementdate"]=data["settlementdate"].map(str)
-data["full date"] = pd.to_datetime(data["settlementdate"]+" "+data["Hour"]+":"+data["Minute"], format="%Y-%m-%d %H:%M")
-data["full date"]=pd.to_datetime(data["full date"], unit='ms')
+#print(api.data.loc[api.data.index == "Solar", :].values.tolist()[0])
+#print(api.data.loc[api.data.index == "Solar", :].values.tolist()[0][test:])
 
-data["full date"]=data["full date"]
+#series = []
+#for tech in api.data.index:
+#    generation = {
+#            'name': tech,
+#            'data': api.data.loc[api.data.index == tech, :].values.tolist()[-30],
+#    }
+#    series.append(generation)
+#
+#print(series)
 
-api = ElexonAPI.ElexonAPI(conf.APIKEY)
+#print(api.data.columns[-30])
 
-date=datetime.now()-timedelta(hours=4)
 
-startDate=datetime.now()-timedelta(hours=10)
-endDate=datetime.now()-timedelta(hours=4)
-api.get_historical_data(startDate, endDate)
 
-print(api.data)
+
+startDate = datetime.now() - timedelta(hours=30)
+
+duration = datetime.now()-startDate
+seconds = duration.seconds
+days = duration.days
+period = (duration.seconds//60 + days*24*60) // 30
+print(period)
+
+

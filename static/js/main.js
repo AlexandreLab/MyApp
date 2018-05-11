@@ -1,4 +1,4 @@
-var chart;
+ var chart;
 
 function updateChart(){
 
@@ -34,7 +34,7 @@ $(function () {
         chart: {
             renderTo: 'chart_ID', 
             type: 'area',
-            height: 500,
+            height: 800,
             events: {
                 load: updateChart    
             }

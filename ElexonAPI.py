@@ -44,7 +44,9 @@ def get_request(url, params):
 
     except requests.exceptions.RequestException as e:  # This is the correct syntax
         print(e)
-    return req
+        return False
+    else:
+        return req
 
 
 class ElexonAPI(object):
@@ -94,8 +96,14 @@ class ElexonAPI(object):
         self.clear_data()
         self.last_date = date
         self.last_period = period
-        print(endDate, self.last_date)
-        while endDate >= startDate:
-            print(self.last_date, self.last_period)
+        duration = endDate-startDate
+        seconds = duration.seconds
+        days = duration.days
+        period = (seconds//60 + days*24*60) // 30
+        count = 0
+
+        while count <= period:
+            count = count+1
+            print(self.last_date, self.last_period, count, period)
             if not self.get_data():
                 break
