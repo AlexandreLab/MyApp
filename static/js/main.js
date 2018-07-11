@@ -43,7 +43,7 @@ $(function () {
         
         xAxis: {
             type: 'datetime',
-            tickInterval: 15*60*1000,
+            tickInterval: 60*60*1000,
             tickPixelInterval: 25,
             dateTimeLabelFormats: {
                 day: '%e. %b %H:%M'

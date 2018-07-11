@@ -62,7 +62,7 @@ def dashboard(chartID='chart_ID', chart_type='area', chart_height=500):
     title = {"text": 'Actual Aggregated Generation Per Type'}
     yAxis = {"title": {"text": 'Quantity (MW)'}}
 
-    historical = 5  # number of hours to go back in time
+    historical = 60  # number of hours to go back in time
     startDate = datetime.now() - timedelta(hours=historical)
     api5min.get_full_historical_data(startDate)
 #    api.get_historical_data(startDate, startDate + timedelta(hours=10))
