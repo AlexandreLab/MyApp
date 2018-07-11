@@ -1,39 +1,34 @@
 import pandas as pd
 from xml.etree import ElementTree
-from datetime import datetime, timedelta
-import requests
+import datetime
+import requests 
 
+def get_rounded_time(date, base=5):
+    time = date.time()
+    minute = time.minute
+    hour = time.hour
+    minute = int(base * round(float(minute)/base))
+        
+    if minute==60:
+        minute = 0
+        hour =(hour+1)
+        if hour == 24:
+            hour = 0
+            date = date+datetime.timedelta(days=1)
+    return date, hour, minute
 
-def xml_to_df(req):
-    tree = ElementTree.fromstring(req.text)
-    data = []
-    index = []
-    period = ""
-    if tree[0][0].text == "200":
-        for branch in tree.iter('item'):
-            source = branch.find('powerSystemResourceType').text.replace('"', "")
-            quantity = float(branch.find('quantity').text)
-            period = branch.find('settlementPeriod').text
-            date = branch.find('settlementDate').text
-            index.append(source)
-            data.append(quantity)
-        return pd.DataFrame(index=index, columns=[date+" "+period], data=data)
-    else:
-        return False
-
-
-def get_time_params(time):
-    period = time.hour*2+time.minute//30
-    date = time.date()
+  
+def get_time_params(fullTime):
+    period = fullTime.hour*2+fullTime.minute//30
+    date = fullTime.date()
     if period == 0:
         period = 48
-        date = (time-timedelta(days=1))
+        fulldate = (fullTime-datetime.timedelta(days=1))
     return date, period
-
 
 def get_request(url, params):
     try:
-        req = requests.get(url, params=params)
+        req=requests.get(url,params=params) 
         response_code = req.status_code
         print(response_code)
         if response_code == 204:
@@ -44,58 +39,161 @@ def get_request(url, params):
 
     except requests.exceptions.RequestException as e:  # This is the correct syntax
         print(e)
-        return False
-    else:
-        return req
-
+        #sys.exit(1)
+    return req 
 
 class ElexonAPI(object):
-
-    def __init__(self, apikey=None, report=None):
-        self.report = 'B1620'
+    XML_MAPPING = None
+    
+    def __init__(self, apikey=None, url=None):
         self.version = 'v1'
         self.apikey = apikey
-        self.url = "https://api.bmreports.com/BMRS/{}/{}".format(self.report.upper(), self.version)
-        date, period = get_time_params(datetime.now())
-        self.last_date = date
-        self.last_period = period
+        self.url = url+"{}".format(self.version)
+        date_time = datetime.datetime.now()-datetime.timedelta(hours=2) #Default time
+        self.date_time = date_time
         self.data = pd.DataFrame()
-
-    def get_data(self):
-        print("get date", self.last_date.strftime("%Y-%m-%d"), self.last_period)
-        params = {
-            'SettlementDate': self.last_date.strftime("%Y-%m-%d"),
-            'Period': self.last_period,
+        
+    def get_data(self, params={}):
+        return
+        
+    def request_data(self, params):
+        params.update({
             'APIKey': self.apikey,
-            'ServiceType': 'xml'
-        }
+            'ServiceType':'xml'
+        })
+        print(params)
         response = get_request(self.url, params)
-        temp_df = xml_to_df(response)
-
-        if isinstance(temp_df, pd.DataFrame):
-            self.data = pd.concat([self.data, temp_df], axis=1)
-            if (self.last_period+1) > 48:
-                self.last_period = 1
-                self.last_date = self.last_date+timedelta(days = 1)
-            else:
-                self.last_period = self.last_period+1
-            return True
-        else:
-            print("No content returned, but no error reported. Retry later.")
-            return False
-
+#         print(response.text)
+        response_df = self.xml_to_df(response)
+        return response_df
+    
     def clear_data(self):
         self.data = pd.DataFrame()
 
     def get_full_historical_data(self, startDate):
         self.clear_data()
-        self.get_historical_data(startDate, datetime.now())
-
+        self.get_historical_data(startDate, datetime.datetime.now())
+        
     def get_historical_data(self, startDate, endDate):
+        return
+    
+    def post_cleanup(self, df):
+        return df
+    
+    def xml_to_df(self, req):
+        tree = ElementTree.fromstring(req.text)
+        data = []
+        if tree[0][0].text == "200":
+            for branch in tree.iter('item'):
+                row=[]
+                for col in self.XML_MAPPING:
+                    #print(col)
+                    row.append(branch.find(col).text.replace('"', ""))
+                data.append(row)
+            return pd.DataFrame(columns=self.XML_MAPPING, data=data)    
+        else: return False
+    
+# Get data at 5min resolution
+class FUELINST(ElexonAPI):
+    """ Instant Generation by Fuel Type """
+    XML_MAPPING = [
+        #'recordType',
+        #'startTimeOfHalfHrPeriod',
+        'publishingPeriodCommencingTime',
+        'settlementPeriod',
+        'ccgt',
+        'oil',
+        'coal',
+        'nuclear',
+        'wind',
+        'ps',
+        'npshyd',
+        'ocgt',
+        'other',
+        'intfr',
+        'intirl',
+        'intned',
+        'intew',
+        #'activeFlag'
+    ]
+    
+    def __init__(self, apikey):
+        report = 'FUELINST'
+        url = "https://api.bmreports.com/BMRS/{}/".format(report.upper())
+        super(FUELINST, self).__init__(apikey, url)                
+       
+    def get_historical_data(self, startDate, endDate):
+
+        self.clear_data()
+        fromDate, fromHour, fromMinute = get_rounded_time(startDate)
+        toDate, toHour, toMinute = get_rounded_time(endDate)
+                    
+        params = {
+            'FuelType':'',
+            'FromDateTime': fromDate.strftime("%Y-%m-%d")+ " {:02d}:{:02d}:00".format(fromHour, fromMinute),
+            'ToDateTime': toDate.strftime("%Y-%m-%d")+ " {:02d}:{:02d}:00".format(toHour, toMinute),
+        }
+        response_df = self.request_data(params)
+        self.data = pd.concat([self.data, self.post_cleanup(response_df)], axis=1) 
+        dt64 = self.data['publishingPeriodCommencingTime'].tail(1).values[0]
+        
+        #Add 5 minutes to the datetime of the last row
+        self.date_time = pd.to_datetime(str(dt64))+datetime.timedelta(minutes=5) 
+
+    #Return only the last set of data received
+    def get_data(self):
+
+        inDate, inHour, inMinute = get_rounded_time(self.date_time)
+
+        params = {
+            'FuelType':'',
+            'FromDateTime': inDate.strftime("%Y-%m-%d")+ " {:02d}:{:02d}:00".format(inHour, inMinute),
+            'ToDateTime': inDate.strftime("%Y-%m-%d")+ " {:02d}:{:02d}:00".format(inHour, inMinute),
+        }
+            
+        response_df = self.request_data(params)
+        if isinstance(response_df, pd.DataFrame):
+            self.data = pd.concat([self.data, self.post_cleanup(response_df)], axis=0)
+            
+            dt64 = self.data['publishingPeriodCommencingTime'].tail(1).values[0]
+            
+            #Add 5 minutes to the datetime of the last row
+            self.date_time = pd.to_datetime(str(dt64))+datetime.timedelta(minutes=5) 
+            return True
+        else: 
+            print("No data currently available")
+            return False
+        
+    def post_cleanup(self, df):
+        #print(df)
+        df.loc[:, 'settlementPeriod':] = df.loc[:, 'settlementPeriod':].apply(pd.to_numeric)
+        df['publishingPeriodCommencingTime'] = pd.to_datetime(
+                                                        df['publishingPeriodCommencingTime'], 
+                                                        format="%Y-%m-%d %H:%M:%S"
+                                                    )
+        df.sort_values('publishingPeriodCommencingTime', inplace=True)
+        return df
+
+#Get data at 30min resolution
+class B1620(ElexonAPI):
+    
+    #List of parameters to extract from the response
+    XML_MAPPING = [
+        'powerSystemResourceType',
+        'quantity',
+        'settlementPeriod',
+        'settlementDate',
+    ]
+    
+    def __init__(self, apikey):
+        report = 'B1620'
+        url = "https://api.bmreports.com/BMRS/{}/".format(report.upper())
+        super(B1620, self).__init__(apikey, url)
+    
+    def get_historical_data(self, startDate, endDate):
+        self.date_time = startDate
         date, period = get_time_params(startDate)
         self.clear_data()
-        self.last_date = date
-        self.last_period = period
         duration = endDate-startDate
         seconds = duration.seconds
         days = duration.days
@@ -104,6 +202,35 @@ class ElexonAPI(object):
 
         while count <= period:
             count = count+1
-            print(self.last_date, self.last_period, count, period)
             if not self.get_data():
                 break
+                
+        
+    def get_data(self, params={}):
+        if not params:
+            date, period = get_time_params(self.date_time )
+            
+            params = {
+                'SettlementDate': date.strftime("%Y-%m-%d"),
+                'Period': period,
+            }
+        response_df = self.request_data(params)
+        if isinstance(response_df, pd.DataFrame):
+            response_df = self.post_cleanup(response_df)
+            response_df = response_df.set_index(["settlementDate","settlementPeriod", "powerSystemResourceType"]).unstack()
+            response_df.reset_index(inplace=True)
+            response_df.columns= ["Date", "Period"]+ list(response_df.columns.get_level_values(1).values)[2:]
+            
+            print(response_df)
+            self.data = pd.concat([self.data, response_df], axis=0)
+            
+            self.date_time = self.date_time+datetime.timedelta(minutes=30)
+        else: 
+            print("No content returned, but no error reported. Retry later.")
+            return False
+
+        
+    def post_cleanup(self, df):
+        df.loc[:, ['quantity', 'settlementPeriod']] = df.loc[:, ['quantity', 'settlementPeriod']].apply(pd.to_numeric)
+        df['settlementDate'] = pd.to_datetime(df['settlementDate'], format="%Y-%m-%d")
+        return df

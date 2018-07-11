@@ -9,7 +9,7 @@ function updateChart(){
         if (results.length>0) {
             var i;
             var series = chart.series;
-            var shift = series[0].data.length > 30;
+            var shift = series[0].data.length > 120;
             var xAxis = chart.xAxis;
             for(i = 0; i< results.length; i++){
                 //console.log(results[i].name);
@@ -34,7 +34,7 @@ $(function () {
         chart: {
             renderTo: 'chart_ID', 
             type: 'area',
-            height: 800,
+            height: 600,
             events: {
                 load: updateChart    
             }
@@ -43,7 +43,8 @@ $(function () {
         
         xAxis: {
             type: 'datetime',
-            tickInterval: 30*60 * 1000,
+            tickInterval: 15*60*1000,
+            tickPixelInterval: 25,
             dateTimeLabelFormats: {
                 day: '%e. %b %H:%M'
             }
@@ -58,7 +59,7 @@ $(function () {
                 stacking: 'normal',
                 lineColor: '#666666',
                 lineWidth: 1,
-                pointInterval: 30*60 * 1000,
+                pointInterval: 5*60 * 1000,
                 pointStart: Date.UTC(year, month, day, hour, minute, 0, 0),
                 marker: {
                     enabled: false,

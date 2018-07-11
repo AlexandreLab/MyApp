@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+	<responseMetadata>
+		<httpCode>200</httpCode>
+		<errorType>Ok</errorType>
+		<description>Success</description>
+		<cappingApplied>No</cappingApplied>
+		<cappingLimit>884</cappingLimit>
+		<queryString>FromDateTime=2018-06-13 14:55:00,ToDateTime=2018-06-13 15:00:00</queryString>
+	</responseMetadata>
+	<responseHeader>
+		<recordType>HDR</recordType>
+		<fileType>INSTANTANEOUS GENERATION BY FUEL TYPE DATA</fileType>
+	</responseHeader>
+	<responseBody>
+		<responseList>
+			<item>
+				<recordType>FUELINST</recordType>
+				<startTimeOfHalfHrPeriod>2018-06-13</startTimeOfHalfHrPeriod>
+				<settlementPeriod>32</settlementPeriod>
+				<publishingPeriodCommencingTime>2018-06-13 14:55:00</publishingPeriodCommencingTime>
+				<ccgt>12859</ccgt>
+				<oil>0</oil>
+				<coal>521</coal>
+				<nuclear>7650</nuclear>
+				<wind>4418</wind>
+				<ps>568</ps>
+				<npshyd>54</npshyd>
+				<ocgt>0</ocgt>
+				<other>128</other>
+				<intfr>1896</intfr>
+				<intirl>0</intirl>
+				<intned>782</intned>
+				<intew>0</intew>
+				<biomass>1455</biomass>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINST</recordType>
+				<startTimeOfHalfHrPeriod>2018-06-13</startTimeOfHalfHrPeriod>
+				<settlementPeriod>32</settlementPeriod>
+				<publishingPeriodCommencingTime>2018-06-13 15:00:00</publishingPeriodCommencingTime>
+				<ccgt>12827</ccgt>
+				<oil>0</oil>
+				<coal>571</coal>
+				<nuclear>7656</nuclear>
+				<wind>4462</wind>
+				<ps>596</ps>
+				<npshyd>58</npshyd>
+				<ocgt>0</ocgt>
+				<other>129</other>
+				<intfr>1904</intfr>
+				<intirl>0</intirl>
+				<intned>769</intned>
+				<intew>0</intew>
+				<biomass>1460</biomass>
+				<activeFlag>Y</activeFlag>
+			</item>
+		</responseList>
+	</responseBody>
+</response>

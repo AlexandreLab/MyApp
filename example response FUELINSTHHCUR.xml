@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+	<responseMetadata>
+		<httpCode>200</httpCode>
+		<errorType>Ok</errorType>
+		<description>Success</description>
+		<cappingApplied>No</cappingApplied>
+		<cappingLimit/>
+		<queryString>FromDateTime=2018-06-13 14:55:00,ToDateTime=2018-06-13 15:00:00</queryString>
+	</responseMetadata>
+	<responseHeader>
+		<recordType>HDR</recordType>
+		<fileType>GENERATION BY FUEL TYPE CURRENT</fileType>
+	</responseHeader>
+	<responseBody>
+		<total>
+			<currentTotalMW>31688</currentTotalMW>
+			<currentTotalPercentage>100.0</currentTotalPercentage>
+			<lastHalfHourTotalMW>30650</lastHalfHourTotalMW>
+			<lastHalfHourTotalpercentage>100.0</lastHalfHourTotalpercentage>
+			<last24HourTotalMWh>685533</last24HourTotalMWh>
+			<last24HourTotalPercentage>100.0</last24HourTotalPercentage>
+		</total>
+		<responseList>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>CCGT</fuelType>
+				<currentMW>13130</currentMW>
+				<currentPercentage>41.4</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>12984</lastHalfHourMW>
+				<lastHalfHourPercentage>42.4</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>333452</last24HourMWh>
+				<last24HourPercentage>48.6</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>OCGT</fuelType>
+				<currentMW>0</currentMW>
+				<currentPercentage>0.0</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>0</lastHalfHourMW>
+				<lastHalfHourPercentage>0.0</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>0</last24HourMWh>
+				<last24HourPercentage>0.0</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>OIL</fuelType>
+				<currentMW>0</currentMW>
+				<currentPercentage>0.0</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>0</lastHalfHourMW>
+				<lastHalfHourPercentage>0.0</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>0</last24HourMWh>
+				<last24HourPercentage>0.0</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>COAL</fuelType>
+				<currentMW>645</currentMW>
+				<currentPercentage>2.0</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>639</lastHalfHourMW>
+				<lastHalfHourPercentage>2.1</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>10308</last24HourMWh>
+				<last24HourPercentage>1.5</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>NUCLEAR</fuelType>
+				<currentMW>7458</currentMW>
+				<currentPercentage>23.5</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>7648</lastHalfHourMW>
+				<lastHalfHourPercentage>25.0</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>181840</last24HourMWh>
+				<last24HourPercentage>26.5</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>WIND</fuelType>
+				<currentMW>5181</currentMW>
+				<currentPercentage>16.4</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>4656</lastHalfHourMW>
+				<lastHalfHourPercentage>15.2</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>42575</last24HourMWh>
+				<last24HourPercentage>6.2</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>PS</fuelType>
+				<currentMW>1145</currentMW>
+				<currentPercentage>3.6</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>594</lastHalfHourMW>
+				<lastHalfHourPercentage>1.9</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>7719</last24HourMWh>
+				<last24HourPercentage>1.1</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>NPSHYD</fuelType>
+				<currentMW>57</currentMW>
+				<currentPercentage>0.2</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>57</lastHalfHourMW>
+				<lastHalfHourPercentage>0.2</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>2933</last24HourMWh>
+				<last24HourPercentage>0.4</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>OTHER</fuelType>
+				<currentMW>127</currentMW>
+				<currentPercentage>0.4</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>128</lastHalfHourMW>
+				<lastHalfHourPercentage>0.4</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>3070</last24HourMWh>
+				<last24HourPercentage>0.4</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>INTFR</fuelType>
+				<currentMW>1997</currentMW>
+				<currentPercentage>6.3</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>1996</lastHalfHourMW>
+				<lastHalfHourPercentage>6.5</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>45758</last24HourMWh>
+				<last24HourPercentage>6.7</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>INTIRL</fuelType>
+				<currentMW>0</currentMW>
+				<currentPercentage>0.0</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>0</lastHalfHourMW>
+				<lastHalfHourPercentage>0.0</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>775</last24HourMWh>
+				<last24HourPercentage>0.1</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>INTNED</fuelType>
+				<currentMW>482</currentMW>
+				<currentPercentage>1.5</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>490</lastHalfHourMW>
+				<lastHalfHourPercentage>1.6</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>18216</last24HourMWh>
+				<last24HourPercentage>2.7</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>INTEW</fuelType>
+				<currentMW>0</currentMW>
+				<currentPercentage>0.0</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>0</lastHalfHourMW>
+				<lastHalfHourPercentage>0.0</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>3205</last24HourMWh>
+				<last24HourPercentage>0.5</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+			<item>
+				<recordType>FUELINSTHHCUR</recordType>
+				<fuelType>BIOMASS</fuelType>
+				<currentMW>1466</currentMW>
+				<currentPercentage>4.6</currentPercentage>
+				<lastHalfHourLocalStartTime>2018-06-13 16:00</lastHalfHourLocalStartTime>
+				<lastHalfHourLocalEndTime>2018-06-13 16:30</lastHalfHourLocalEndTime>
+				<lastHalfHourMW>1458</lastHalfHourMW>
+				<lastHalfHourPercentage>4.8</lastHalfHourPercentage>
+				<last24HourLocalStartTime>2018-06-12 16:30</last24HourLocalStartTime>
+				<last24HourLocalEndTime>2018-06-13 16:30</last24HourLocalEndTime>
+				<last24HourMWh>35682</last24HourMWh>
+				<last24HourPercentage>5.2</last24HourPercentage>
+				<activeFlag>Y</activeFlag>
+			</item>
+		</responseList>
+		<dataLastUpdated>2018-06-13 15:50:00</dataLastUpdated>
+	</responseBody>
+</response>

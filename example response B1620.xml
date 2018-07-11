@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<response>
+	<responseMetadata>
+		<httpCode>200</httpCode>
+		<errorType>Ok</errorType>
+		<description>Success</description>
+		<cappingApplied>No</cappingApplied>
+		<cappingLimit>1000</cappingLimit>
+		<queryString>SettlementDate=2018-06-13,Period=29</queryString>
+	</responseMetadata>
+	<responseBody>
+		<dataItem>B1620</dataItem>
+		<responseList>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Solar generation</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641139</timeSeriesID>
+				<quantity>5582</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Solar&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Wind generation</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641140</timeSeriesID>
+				<quantity>566.066</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Wind Offshore&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Wind generation</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641141</timeSeriesID>
+				<quantity>3480.393</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Wind Onshore&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Production</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641142</timeSeriesID>
+				<quantity>126</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Other&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Production</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641143</timeSeriesID>
+				<quantity>7639</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Nuclear&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Production</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641144</timeSeriesID>
+				<quantity>0</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Fossil Oil&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Production</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641145</timeSeriesID>
+				<quantity>13474</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Fossil Gas&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Production</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641146</timeSeriesID>
+				<quantity>572</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Fossil Hard coal&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Production</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641147</timeSeriesID>
+				<quantity>57</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Hydro Run-of-river and poundage&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Production</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641148</timeSeriesID>
+				<quantity>683</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Hydro Pumped Storage&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+			<item>
+				<documentType>Actual generation per type</documentType>
+				<businessType>Production</businessType>
+				<processType>Realised</processType>
+				<timeSeriesID>NGET-EMFIP-AGPT-TS-00641149</timeSeriesID>
+				<quantity>1320</quantity>
+				<curveType>Sequential fixed size block</curveType>
+				<resolution>PT30M</resolution>
+				<settlementDate>2018-06-13</settlementDate>
+				<settlementPeriod>29</settlementPeriod>
+				<powerSystemResourceType>&quot;Biomass&quot;</powerSystemResourceType>
+				<activeFlag>Y</activeFlag>
+				<documentID>NGET-EMFIP-AGPT-00124992</documentID>
+				<documentRevNum>1</documentRevNum>
+			</item>
+		</responseList>
+	</responseBody>
+</response>
