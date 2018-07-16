@@ -44,6 +44,14 @@ def get_request(url, params):
 
 class ElexonAPI(object):
     XML_MAPPING = None
+    emissions_dict = {'ccgt': 433, 'oil': 1159, 'coal':981, 'nuclear':0, 'wind':0, 
+                  'ps':0, 'npshyd':0, 'ocgt':511, 'other':64,
+                  'intfr':0, 'intirl':0, 'intned':0, 'intew':0}
+    
+    generation_units = ['ccgt', 'oil', 'coal', 'nuclear', 'wind', 'ps',
+                    'npshyd', 'ocgt', 'other', 'intfr', 'intirl',
+                    'intned', 'intew']
+
     
     def __init__(self, apikey=None, url=None):
         self.version = 'v1'
@@ -92,6 +100,11 @@ class ElexonAPI(object):
                 data.append(row)
             return pd.DataFrame(columns=self.XML_MAPPING, data=data)    
         else: return False
+    
+    
+    def average_CO2(self):
+        self.data["CO2 average"] = self.data.loc[:,self.generation_units].dot(pd.Series(self.emissions_dict))/self.data.loc[:,self.generation_units].sum(axis=1)
+
     
 # Get data at 5min resolution
 class FUELINST(ElexonAPI):
@@ -172,6 +185,8 @@ class FUELINST(ElexonAPI):
                                                         format="%Y-%m-%d %H:%M:%S"
                                                     )
         df.sort_values('publishingPeriodCommencingTime', inplace=True)
+        df["CO2 average"] = df.loc[:,self.generation_units].dot(pd.Series(self.emissions_dict))/df.loc[:,self.generation_units].sum(axis=1)
+        
         return df
 
 #Get data at 30min resolution
@@ -233,4 +248,5 @@ class B1620(ElexonAPI):
     def post_cleanup(self, df):
         df.loc[:, ['quantity', 'settlementPeriod']] = df.loc[:, ['quantity', 'settlementPeriod']].apply(pd.to_numeric)
         df['settlementDate'] = pd.to_datetime(df['settlementDate'], format="%Y-%m-%d")
+        df["CO2 average"] = df.loc[:,self.generation_units].dot(pd.Series(self.emissions_dict))/df.loc[:,self.generation_units].sum(axis=1)
         return df

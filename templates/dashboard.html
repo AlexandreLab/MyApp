@@ -1,43 +1,45 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block content %}
 
-{% block content %}
+
 
 <div class="jumbotron">
     <h1 class="display-4">Live generation data</h1>
     <p class="lead">Data collected from Elexon BMRS platform and displayed here</p>
 </div>
 
-<div class="containr-fluid">
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
             <div id={{ chartID|safe }} style="width:100%; height:600px;"></div>
             <script>
-                var chart_id = {{ chartID|safe }}
-                var series = {{ series|safe }}
-                var title = {{ title|safe }}
-                var starttime = {{ starttime|safe }}
+                var chart_id = {{ chartID| safe }}
+                var series = {{ series| safe }}
+                var title = {{ title| safe }}
+                var starttime = {{ starttime| safe }}
                 var year = starttime[0]
                 var month = starttime[1]
                 var day = starttime[2]
                 var hour = starttime[3]
                 var minute = starttime[4]
-                var yAxis = {{ yAxis|safe }}
-                var chart = {{ chart|safe }}
+                var yAxis = {{ yAxis| safe }}
+                var chart = {{ chart| safe }}
             </script>
-            <script src="../static/js/main.js" type="text/javascript"></script> 
+            <script src="../static/js/chart.js" type="text/javascript"></script>
         </div>
         <div class="chart-notes">
             Notes about this chart
-         </div>
-    </div>
-    
-    <div class="row">
-        <div class="col-sm-12">
-            
         </div>
     </div>
 
-
+    <div class="row">
+        <div class="col-sm-12">
+            <div style="width: 600px; height: 400px; margin: 0 auto">
+                <div id="container-speed" style="width: 300px; height: 200px; float: left"></div>
+                <div id="container-rpm" style="width: 300px; height: 200px; float: left"></div>
+            </div>
+            <script src="../static/js/gauge.js" type="text/javascript"></script>
+        </div>
+    </div>
 </div>
 
 
